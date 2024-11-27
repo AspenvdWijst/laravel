@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <body>
-<div class="container h-100 mt-5">
+<div class="container h-100 mt-5 bg-gray-500">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-10 col-md-8 col-lg-6">
             <h3>Add a Post</h3>
@@ -22,3 +22,4 @@
     </div>
 </div>
 </body>
+@endsection

@@ -1,6 +1,8 @@
-<div class="container h-100 mt-5">
+@extends('layouts.app')
+@section('content')
+<div class="container h-100 w-1/2 mt-5 bg-gray-500">
     <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-10 col-md-8 col-lg-6">
+        <div class="col-20 col-md-8 col-lg-6">
             <h3>Update Post</h3>
             <form action="{{ route('posts.update', $post->id) }}" method="post">
                 @csrf
@@ -12,10 +14,11 @@
                 </div>
                 <div class="form-group">
                     <label for="body">Body</label>
-                    <textarea class="form-control" id="body" name="body" rows="3" required>{{ $post->body }}</textarea>
+                    <textarea class="form-control" id="body" name="body" rows="7" cols="50" required>{{ $post->body }}</textarea>
                 </div>
                 <button type="submit" class="btn mt-3 btn-primary">Update Post</button>
             </form>
         </div>
     </div>
 </div>
+@endsection

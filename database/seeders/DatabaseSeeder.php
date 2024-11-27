@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => Hash::make('@dm1N???'),
             'remember_token' => Str::random(10),
+            'role_id' => (2),
         ]);
 
         User::factory(10)->create();
