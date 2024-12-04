@@ -1,6 +1,4 @@
-
-@extends('layouts.app')
-@section('content')
+<x-app-layout>
     <div class="container bg-gray-500">
         <h1>Blog Posts</h1>
             <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Create New Post</a>
@@ -31,5 +29,6 @@
             </tbody>
         </table>
     </div>
-@endsection
+
+</x-app-layout>
 
